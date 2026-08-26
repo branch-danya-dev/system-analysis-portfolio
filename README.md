@@ -34,7 +34,7 @@ System analysis of a phased Windows → Astra Linux migration across a large ent
 
 <td width="20%" align="center" valign="middle">
 <a href="https://github.com/branch-danya-dev/enterprise-workplace-os-migration">
-<img src="https://img.shields.io/badge/Explore-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Open%20Migration%20Case-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 </td>
 </tr>
@@ -66,7 +66,7 @@ System analysis and solution design for automated dimensioning of rectangular Ar
 
 <td width="20%" align="center" valign="middle">
 <a href="https://github.com/branch-danya-dev/revit-rebar-autodim-analysis">
-<img src="https://img.shields.io/badge/Explore-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Open%20Rebar%20Analysis-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 </td>
 </tr>
@@ -74,7 +74,7 @@ System analysis and solution design for automated dimensioning of rectangular Ar
 
 ---
 
-## How I Think
+## How I Work Across the System
 
 <p align="center">
   <img src="assets/competency-map.svg" alt="Technical Competency Map" width="860">
@@ -86,21 +86,21 @@ System analysis and solution design for automated dimensioning of rectangular Ar
 
 ---
 
-## Core Stack
+## Tools & Technologies
 
 <p align="center">
-  <img src="https://img.shields.io/badge/BPMN-2.0-0D1117?style=flat-square">
-  <img src="https://img.shields.io/badge/UML-Modeling-0D1117?style=flat-square">
   <img src="https://img.shields.io/badge/OpenAPI-Swagger-0D1117?style=flat-square&logo=swagger&logoColor=white">
   <img src="https://img.shields.io/badge/SQL-Data-0D1117?style=flat-square&logo=postgresql&logoColor=white">
   <img src="https://img.shields.io/badge/C%23-.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white">
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
   <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white">
-  <img src="https://img.shields.io/badge/PlantUML-Diagrams-0D1117?style=flat-square">
+</p>
+
+<p align="center">
+  <sub>Development experience is part of the analysis workflow, not a separate track.</sub>
 </p>
 
 ---
