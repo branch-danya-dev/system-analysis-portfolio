@@ -49,6 +49,39 @@ System analysis of a phased Windows → Astra Linux migration across a large ent
 </td>
 
 <td width="68%" valign="top">
+<p><strong>MOBILE APPLICATION</strong></p>
+<h2>Aveli</h2>
+<p><em>Offline-first mobile workspace with explicit data ownership and access boundaries.</em></p>
+<p>
+System analysis of a mobile workspace for independent beauty professionals with local operational data, backend-managed identity and entitlement, and subscription billing through RevenueCat.
+</p>
+<p>
+<code>Mobile Architecture</code>
+<code>Offline-first</code>
+<code>Data Ownership</code>
+<code>REST API</code>
+<code>Auth & Access</code>
+<code>Billing Integration</code>
+</p>
+</td>
+
+<td width="20%" align="center" valign="middle">
+<a href="https://github.com/branch-danya-dev/aveli-system-analysis">
+<img src="https://img.shields.io/badge/Open%20Aveli%20Case-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td width="12%" align="center" valign="middle">
+<h1>03</h1>
+</td>
+
+<td width="68%" valign="top">
 <p><strong>BIM AUTOMATION</strong></p>
 <h2>Rebar AutoDim</h2>
 <p><em>Deterministic geometry automation inside Autodesk Revit.</em></p>
