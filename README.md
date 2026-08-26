@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=System%20Analysis%20Portfolio&fontAlign=50&fontAlignY=38&desc=Daniel%20Rogulin%20%C2%B7%20Technical%20Analysis%20%C2%B7%20Enterprise%20Systems&descAlign=50&descAlignY=58&animation=fadeIn" alt="Portfolio banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=System%20Analysis%20Portfolio&fontAlign=50&fontAlignY=38&desc=Daniel%20Rogulin%20%C2%B7%20Commercial%20Cases%20%C2%B7%20Technical%20Thinking&descAlign=50&descAlignY=58&animation=fadeIn" alt="Portfolio banner" />
 </p>
 
 <p align="center">
-  <strong>A curated collection of system analysis case studies and technical solution designs.</strong>
+  <strong>Commercial system analysis cases built around real constraints, real systems and implementation-ready decisions.</strong>
 </p>
 
 <p align="center">
@@ -12,77 +12,59 @@
 
 ---
 
-## About This Portfolio
-
-This repository is a single entry point to my system analysis projects.
-
-Each case focuses on a real or production-oriented problem and shows how I move from:
-
-```text
-Problem
-   ↓
-Requirements
-   ↓
-Business Rules
-   ↓
-System Design
-   ↓
-Technical Decisions
-   ↓
-Implementation-Ready Solution
-```
-
-My main focus is analysis that can be implemented and validated in real systems.
-
----
-
-## Featured Cases
+## Portfolio Map
 
 <table>
 <tr>
 
 <td width="50%" valign="top">
 
-<h3>Enterprise Workplace OS Migration</h3>
+<p><strong>01 / ENTERPRISE IT</strong></p>
 
-<p><strong>System analysis of a large-scale enterprise workplace migration.</strong></p>
+<h2>Workplace OS Migration</h2>
+
+<p><em>Enterprise change under production constraints.</em></p>
 
 <p>
-Requirements, dependency analysis, rollout logic, migration states,
-process modeling and technical artifacts for a phased
-Windows → Astra Linux migration.
+System analysis of a phased Windows → Astra Linux migration across a large enterprise workplace environment.
 </p>
 
 <p>
-<strong>Focus:</strong><br>
-Enterprise IT · Dependencies · Rollout Design · Process Modeling · Migration Logic
+<code>Requirements</code>
+<code>Dependencies</code>
+<code>Rollout Logic</code>
+<code>State Model</code>
+<code>Process Design</code>
 </p>
 
 <a href="https://github.com/branch-danya-dev/enterprise-workplace-os-migration">
-<img src="https://img.shields.io/badge/Open%20Case-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Explore%20Case-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 
 </td>
 
 <td width="50%" valign="top">
 
-<h3>Rebar AutoDim</h3>
+<p><strong>02 / BIM AUTOMATION</strong></p>
 
-<p><strong>System analysis and solution design for Autodesk Revit 2025 automation.</strong></p>
+<h2>Rebar AutoDim</h2>
+
+<p><em>Deterministic geometry automation inside Autodesk Revit.</em></p>
 
 <p>
-AS-IS / TO-BE, requirements, geometry processing, directional grid
-selection, dimension placement, Revit API interaction,
-edge cases, idempotency and traceability.
+System analysis and solution design for automated dimensioning of rectangular Area Reinforcement zones in Revit 2025.
 </p>
 
 <p>
-<strong>Focus:</strong><br>
-System Design · Geometry · Revit API · Deterministic Logic · Automation
+<code>System Design</code>
+<code>Geometry</code>
+<code>Revit API</code>
+<code>Placement Logic</code>
+<code>Idempotency</code>
 </p>
 
 <a href="https://github.com/branch-danya-dev/revit-rebar-autodim-analysis">
-<img src="https://img.shields.io/badge/Open%20Analysis-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Explore%20Case-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 
 </td>
@@ -92,81 +74,99 @@ System Design · Geometry · Revit API · Deterministic Logic · Automation
 
 ---
 
-## What These Cases Demonstrate
+## How I Approach a System
 
-- requirements engineering;
+I treat analysis as a path from ambiguity to an implementation-ready model.
+
+```text
+Problem / Domain
+        ↓
+Scope & Constraints
+        ↓
+Requirements
+        ↓
+Business Rules
+        ↓
+System Behavior
+        ↓
+Architecture / Integrations / Data
+        ↓
+Edge Cases & Failure Handling
+        ↓
+Implementation-Ready Solution
+```
+
+The goal is not to produce documentation for its own sake, but to make system behavior explicit enough to design, build and validate.
+
+---
+
+## What You Will Find in My Cases
+
+Depending on the problem, project repositories may include:
+
+- problem framing and scope;
 - AS-IS / TO-BE analysis;
-- business rules;
 - functional and non-functional requirements;
+- business rules;
 - acceptance criteria;
-- UML and process modeling;
-- component and interaction design;
-- API and integration thinking;
-- data and dependency modeling;
-- failure and edge-case analysis;
-- idempotency and re-run behavior;
-- traceability from problem to implementation.
+- UML / BPMN / PlantUML diagrams;
+- system and component design;
+- integration and API logic;
+- data and dependency models;
+- edge cases and failure scenarios;
+- idempotency and state behavior;
+- traceability from requirements to implementation decisions;
+- before / after results.
 
 ---
 
 ## Technical Perspective
 
-My background includes hands-on software development, so I approach system analysis with implementation constraints in mind.
+My system-analysis work is supported by hands-on software development experience.
 
-Technologies and areas I work with include:
+That means I pay attention not only to what a system should do, but also to:
 
-<p>
-  <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000000" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-</p>
+- implementation constraints;
+- API and data contracts;
+- state transitions;
+- failure modes;
+- transaction boundaries;
+- maintainability;
+- deterministic behavior;
+- how analytical decisions map to code.
 
-Analysis tools and practices:
-
-<p>
-  <img src="https://img.shields.io/badge/BPMN-2.0-0D1117?style=flat-square" />
-  <img src="https://img.shields.io/badge/UML-Modeling-0D1117?style=flat-square" />
-  <img src="https://img.shields.io/badge/OpenAPI-Swagger-0D1117?style=flat-square&logo=swagger&logoColor=white" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-Data%20Analysis-0D1117?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PlantUML-Diagrams-0D1117?style=flat-square" />
-  <img src="https://img.shields.io/badge/Miro-050038?style=flat-square&logo=miro&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" />
-</p>
+> Good analysis should remain useful when development starts.
 
 ---
 
-## Portfolio Structure
+## Portfolio Principles
 
-Each project repository is self-contained and may include:
+**Commercial over fictional**  
+Cases are based on real work and production-oriented problems rather than isolated study exercises.
 
-```text
-Scope / Problem
-AS-IS / TO-BE
-Requirements
-Business Rules
-Acceptance Criteria
-System Design
-Diagrams
-Integration / API Logic
-Edge Cases
-Traceability
-Result
-```
+**Traceable over decorative**  
+Requirements, rules, diagrams and technical decisions should connect to each other.
 
-New cases will be added here as the portfolio grows.
+**Readable over exhaustive**  
+Each repository is designed to be scanned quickly, with deeper technical detail available where it matters.
+
+**Implementation-aware**  
+Architecture and requirements are written with real engineering constraints in mind.
 
 ---
 
-## Profile
+## Navigation
 
 <p align="center">
   <a href="https://github.com/branch-danya-dev">
-    <img src="https://img.shields.io/badge/Open%20GitHub%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub%20Profile-181717?style=for-the-badge&logo=github&logoColor=white">
   </a>
+  &nbsp;
+  <a href="https://github.com/branch-danya-dev?tab=repositories">
+    <img src="https://img.shields.io/badge/All%20Repositories-0D1117?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+</p>
+
+<p align="center">
+  <sub>This portfolio grows as new commercial and technical cases are documented.</sub>
 </p>
