@@ -126,10 +126,14 @@ A local-first mobile product with a local professional workspace and backend-con
 
 ### Rebar AutoDim
 
-An implemented Revit plugin for automated dimensioning, with geometry reasoning, native references, transactions and regeneration.
+An implemented Revit plugin for automated dimensioning, with geometry reasoning, native references, transactions and regeneration. The system-analysis case and the working RebarDimmer implementation are linked separately below.
 
 <a href="https://github.com/branch-danya-dev/revit-rebar-autodim-analysis">
-<img src="https://img.shields.io/badge/Open%20Case-Rebar%20AutoDim-181717?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/System%20Analysis-Rebar%20AutoDim-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://github.com/branch-danya-dev/revit-rebar-autodim">
+<img src="https://img.shields.io/badge/Working%20Plugin-RebarDimmer-238636?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 </td>
