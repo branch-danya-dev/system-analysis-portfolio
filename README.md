@@ -1,13 +1,14 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=210&text=System%20Analysis%20Portfolio&fontAlign=50&fontAlignY=40&desc=Real%20Systems%20%C2%B7%20Ownership%20%C2%B7%20Implementation-Aware%20Analysis&descAlign=50&descAlignY=60&animation=fadeIn" alt="System Analysis Portfolio banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Daniel%20Rogulin&fontAlign=50&fontAlignY=38&desc=System%20Analyst%20%C2%B7%20Integrations%20%C2%B7%20Solution%20Design&descAlign=50&descAlignY=58&animation=fadeIn" alt="Daniel Rogulin — System Analyst" />
 </p>
 
 <p align="center">
-  <strong>Three materially different real systems. One implementation-aware system-analysis approach.</strong>
+  <strong>System Analyst with hands-on development and technical solution design experience.</strong>
 </p>
 
 <p align="center">
-  I analyze boundaries, responsibilities, ownership, behavior, state, data, contracts and failures — and keep the model connected to real implementation constraints.
+  I turn business problems and complex changes into clear system models:<br>
+  requirements, boundaries, data, APIs, integrations, states, failures and verifiable behavior.
 </p>
 
 <p align="center">
@@ -15,316 +16,279 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/branch-danya-dev">
-    <img src="https://img.shields.io/badge/GitHub%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://t.me/sadblueses">
+    <img src="https://img.shields.io/badge/Telegram-@sadblueses-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/branch-danya-dev/ssad-methodology">
-    <img src="https://img.shields.io/badge/SSAD%20Methodology-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="mailto:danrogulin@gmail.com">
+    <img src="https://img.shields.io/badge/Email-danrogulin%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/branch-danya-dev">
+    <img src="https://img.shields.io/badge/GitHub-branch--danya--dev-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
 ---
 
-## Portfolio thesis
+## What I do
 
-The portfolio is intentionally not built around a repeated artifact set such as `requirements + ERD + Swagger + sequence diagram`.
+I enjoy tasks where collecting requirements is not enough — the real challenge is understanding **how the whole system should behave** and what happens when the design reaches implementation.
 
-The systems have different shapes, so their analytical knowledge has different structures.
+I connect business context with technical design: clarify constraints, define component responsibilities, formalize behavior, design contracts and help the team carry the solution through to a working result.
 
-```mermaid
-flowchart LR
-    E[Real evidence] --> B[Boundaries]
-    B --> R[Responsibilities]
-    R --> O[Ownership]
-    O --> M[Behavior · State · Data · Contracts]
-    M --> F[Failures · Change · Compatibility]
-    F --> I[Implementation constraints]
-    I --> V[Verification]
-```
+### Problems I can help solve
 
-> **The goal is not to produce documents. The goal is to preserve correct system meaning from problem framing through implementation and verification.**
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+**New system or feature**
 
-## Portfolio at a glance
+Clarify the problem, define boundaries, actors, scenarios, business rules and implementation-ready requirements before development starts.
 
-| Case | System shape | Main analytical challenge | Evidence / status |
-|---|---|---|---|
-| **Enterprise Workplace OS Migration** | distributed enterprise transformation | aggregate readiness and controlled migration across independently owned domains | sanitized reconstruction of a real enterprise migration; technical API/data projection is explicitly synthetic |
-| **Aveli** | local-first mobile product | separate professional workspace ownership from server-controlled identity, access and billing | real product system-analysis case with frontend/backend/local-data/integration boundaries |
-| **Rebar AutoDim** | host-application automation | preserve analytical meaning across view geometry, Revit references, native writes and regeneration | real implemented Revit plugin; accepted by the customer and introduced into regular company use |
-| **SSAD** | methodology layer | generalize the reasoning without forcing one repository template | formalized methodology validated across all three system shapes |
+</td>
+<td width="50%" valign="top">
 
----
+**Change in an existing system**
 
-## 01 · Enterprise Workplace OS Migration
+Identify the change surface, compatibility risks, affected contracts and the parts of the current model that must be reopened.
 
-**Large-scale change under production constraints.**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-[Open case →](https://github.com/branch-danya-dev/enterprise-workplace-os-migration)
+**APIs and integrations**
 
-The analytical object is not simply “install Astra Linux”. It is the controlled evolution of an employee workplace while preserving the ability to perform required business activity.
+Define responsibilities, design REST/API contracts, data flows, failure behavior, idempotency and boundary semantics.
 
-### What the analysis exposed
+</td>
+<td width="50%" valign="top">
 
-```text
-one broad migration_status
-        ↓ decomposed into
-Workplace Environment
-Readiness
-Planning
-Execution
-Exceptions
-```
+**Data and state**
 
-Key distinctions:
+Clarify data ownership, entity lifecycles, state transitions, history and derived views.
 
-```text
-Astra installed
-!= operational migration complete
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-MigrationSchedule
-!= MigrationAttempt
+**Complex business logic**
 
-distributed evidence
-!= distributed ownership of the readiness decision
+Turn ambiguous behavior into explicit rules, constraints, exceptions and verifiable scenarios.
 
-blocker resolved
-!= readiness automatically GREEN
-```
+</td>
+<td width="50%" valign="top">
 
-Current system-shaped knowledge areas:
+**Delivery support**
 
-```text
-system/
-workplace/
-readiness/
-planning/
-execution/
-exceptions/
-integrations/
-technical-projection/
-```
+Carry the solution through review, grooming, implementation and verification so system meaning does not get lost on the way to code.
 
-The case also demonstrates how corrected domain ownership changes a technical projection: generic status updates were replaced by owner-specific operations, and reporting became a derived read model rather than a second source of truth.
-
-> **Case boundary:** the migration experience is real and sanitized; REST/OpenAPI/PostgreSQL artifacts are educational technical projections created after the real programme.
+</td>
+</tr>
+</table>
 
 ---
 
-## 02 · Aveli
+## Selected cases
 
-**Local-first mobile workspace with explicit ownership and bounded offline trust.**
+I keep this repository lightweight — the full analysis lives in the individual case repositories.
 
-[Open case →](https://github.com/branch-danya-dev/aveli-system-analysis)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Aveli separates two concerns with very different ownership and availability requirements:
+### Enterprise Workplace OS Migration
 
-```text
-Professional Workspace
-→ local device
-→ clients, appointments, payments, notes, photos
+A real enterprise Windows → Astra Linux migration case covering readiness, planning, exceptions and distributed responsibility.
 
-Identity / Access / Billing
-→ backend
-→ account, sessions, trial, grants, subscription, access decision
-```
+<a href="https://github.com/branch-danya-dev/enterprise-workplace-os-migration">
+<img src="https://img.shields.io/badge/Open%20Case-Enterprise%20Migration-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-### What the analysis protects
+</td>
+<td width="50%" valign="top">
 
-```text
-RevenueCat / Store
-→ billing evidence
+### Aveli
 
-Aveli Backend
-→ normalized billing state
-→ final workspace-access decision
-```
+A local-first mobile product with a local professional workspace and backend-controlled identity, access and subscription billing.
 
-Key distinctions:
+<a href="https://github.com/branch-danya-dev/aveli-system-analysis">
+<img src="https://img.shields.io/badge/Open%20Case-Aveli-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-```text
-purchase evidence
-!= workspace access authority
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-access expired
-!= delete professional data
+### Rebar AutoDim
 
-backend unavailable
-!= workspace deleted
+An implemented Revit plugin for automated dimensioning, with geometry reasoning, native references, transactions and regeneration.
 
-offline cache
-!= unlimited trust
-```
+<a href="https://github.com/branch-danya-dev/revit-rebar-autodim-analysis">
+<img src="https://img.shields.io/badge/Open%20Case-Rebar%20AutoDim-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-Current system-shaped knowledge areas:
+</td>
+<td width="50%" valign="top">
 
-```text
-business/
-database/
-backend/
-frontend/
-integrations/
-system/
-```
+### SSAD Methodology
 
-This case demonstrates local/server data ownership, narrow backend API boundaries, access precedence, billing reconciliation, offline trust and whole-system failure/release reasoning.
+My practical system-analysis methodology: knowledge is structured around real system boundaries, responsibilities and ownership.
+
+<a href="https://github.com/branch-danya-dev/ssad-methodology">
+<img src="https://img.shields.io/badge/Open-SSAD%20Methodology-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 03 · Rebar AutoDim
+## How I work
 
-**Deterministic geometry automation inside Autodesk Revit 2025.**
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
 
-[Open case →](https://github.com/branch-danya-dev/revit-rebar-autodim-analysis)
+### 01
+**Understand the problem**
 
-The plugin reads structural truth from Revit and owns only the generated annotation layer.
+Why the change is needed, who uses it, what result is expected and which constraints are already known.
 
-### What the analysis exposed
+</td>
+<td width="33%" valign="top" align="center">
 
-```text
-what should be dimensioned
-→ semantic target
+### 02
+**Define the boundaries**
 
-how Revit can dimension it
-→ native Reference realization
-```
+What belongs inside the system, what stays outside, who owns each responsibility and where authoritative knowledge lives.
 
-Key distinctions:
+</td>
+<td width="33%" valign="top" align="center">
 
-```text
-view-space geometry
-!= project XYZ assumptions
+### 03
+**Formalize behavior**
 
-semantic target
-!= Revit Reference
+Scenarios, requirements, rules, states, data, failures and the invariants that must remain true.
 
-missing optional grid
-!= failed native dimension
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
 
-valid geometry
-!= committed annotation result
+### 04
+**Design interactions**
 
-rerun
-!= append duplicate output
-```
+APIs, integrations, contracts, data flows and behavior across responsibility boundaries.
 
-Current system-shaped knowledge areas:
+</td>
+<td width="33%" valign="top" align="center">
 
-```text
-system/
-execution-context/
-geometry/
-references/
-layout/
-annotations/
-regeneration/
-revit-boundary/
-evidence/
-```
+### 05
+**Align with implementation**
 
-A transaction per independently meaningful zone provides local failure isolation, while regeneration maintains one current plugin-owned annotation result per source zone.
+Review and grooming with the team, resolving ambiguity and checking technical constraints before they become defects.
 
-> **Outcome:** the solution was implemented, accepted by the customer and introduced into regular company use.
+</td>
+<td width="33%" valign="top" align="center">
 
----
+### 06
+**Verify the result**
 
-## SSAD · System-Structured Analysis Documentation
+Compare requirements, models, contracts and observed behavior. New evidence goes back into current system knowledge.
 
-**A practical system-analysis methodology I designed, formalized and applied across the portfolio.**
+</td>
+</tr>
+</table>
 
-[Open methodology →](https://github.com/branch-danya-dev/ssad-methodology)
-
-SSAD structures analytical knowledge around real system boundaries, responsibilities and ownership rather than a universal document taxonomy.
-
-The three cases deliberately produce different repository structures:
-
-```text
-Aveli
-→ product-shaped
-
-Enterprise Workplace Migration
-→ transformation-shaped
-
-Rebar AutoDim
-→ host-application-shaped
-```
-
-The commonality is the reasoning model:
-
-```text
-Boundaries
-→ Responsibilities
-→ Ownership
-→ Local models
-→ Connections
-→ System synthesis
-```
-
-> **Same analytical principles. Different system-shaped knowledge architecture.**
-
-The methodology repository also covers the real analyst workflow, change analysis, collaboration, knowledge architecture, task-based practice and comparative real-world validation.
+> **I prefer analysis that can be implemented:** requirements, contracts and architecture should preserve their meaning when they reach real code.
 
 ---
 
-## How I work across a system
+## Competencies
 
-```mermaid
-flowchart TD
-    P[Problem / Request] --> Q[Requirements & constraints]
-    Q --> B[Boundaries & responsibilities]
-    B --> O[Ownership & authority]
-    O --> M[Behavior · States · Data]
-    M --> C[Interfaces · Integrations · Flows]
-    C --> F[Trust · Failures · Compatibility]
-    F --> S[Specification / Solution Design]
-    S --> D[Implementation]
-    D --> V[Verification]
-    V --> K[Current canonical knowledge]
-    V -. mismatch / new evidence .-> M
-```
+### System Analysis
 
-My strongest focus is the middle of this chain: making system meaning explicit enough that requirements, contracts, implementation and verification do not silently diverge.
+<p>
+  <img src="https://img.shields.io/badge/Requirements-Engineering-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/System-Boundaries-1F6FEB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Ownership-%26%20Authority-8250DF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Business-Rules-238636?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/State-Models-D29922?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Failure-Analysis-DA3633?style=for-the-badge" />
+</p>
 
----
+### APIs, integrations and data
 
-## Core competencies demonstrated by the cases
+<p>
+  <img src="https://img.shields.io/badge/REST-API-009688?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OpenAPI-Swagger-6BA539?style=for-the-badge&logo=swagger&logoColor=white" />
+  <img src="https://img.shields.io/badge/JSON-Contracts-000000?style=for-the-badge&logo=json&logoColor=white" />
+  <img src="https://img.shields.io/badge/Integration-Analysis-0969DA?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SQL-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data-Modeling-4B5563?style=for-the-badge" />
+</p>
 
-**System analysis:** boundaries, responsibilities, ownership, requirements, business rules, behavior, state models, data ownership, interfaces, integrations, trust, failures and change impact.
+### Modeling and working tools
 
-**Contracts & data:** REST/OpenAPI, JSON contracts, SQL/PostgreSQL modeling, read models, idempotency and compatibility-aware projections.
+<p>
+  <img src="https://img.shields.io/badge/BPMN-2.0-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/UML-Modeling-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Mermaid-Diagrams-FF3670?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
+  <img src="https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white" />
+</p>
 
-**Implementation awareness:** C#/.NET and Revit API, Flutter/Dart, NestJS/Prisma, local SQLite/Drift, Docker, Git/GitHub and production-oriented failure reasoning.
+### Implementation context
 
-**Modeling tools:** Mermaid, PlantUML, UML/BPMN where they clarify a system question rather than define the knowledge architecture.
-
----
-
-## Suggested review routes
-
-```text
-Want the broadest enterprise case?
-→ Enterprise Workplace OS Migration
-
-Want product / API / data / offline behavior?
-→ Aveli
-
-Want deep implementation-aware boundary reasoning?
-→ Rebar AutoDim
-
-Want the reasoning model behind all three?
-→ SSAD
-```
+<p>
+  <img src="https://img.shields.io/badge/C%23-.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter-Dart-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Revit-API-186BFF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
 ---
+
+## SSAD — my system-analysis approach
+
+Through practical work I formalized **SSAD — System-Structured Analysis Documentation**.
+
+The idea is simple:
+
+> **Knowledge structure should follow the structure of the real system, not a universal documentation template.**
+
+SSAD has already been applied to three materially different systems: a mobile product, an enterprise migration and host-application automation in Revit. It keeps requirements, ownership, behavior, implementation and verification connected as one current system model.
 
 <p align="center">
-  <a href="https://github.com/branch-danya-dev">
-    <img src="https://img.shields.io/badge/Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/branch-danya-dev/ssad-methodology">
+    <img src="https://img.shields.io/badge/Explore-SSAD%20Methodology-8250DF?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## Contact
+
+If you need help **analyzing a new system, designing an API or integration, formalizing complex behavior, changing an existing solution safely, or preparing implementation-ready requirements**, feel free to reach out.
+
+<p align="center">
+  <a href="https://t.me/sadblueses">
+    <img src="https://img.shields.io/badge/Telegram-@sadblueses-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/branch-danya-dev/ssad-methodology">
-    <img src="https://img.shields.io/badge/Methodology-SSAD-0D1117?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="mailto:danrogulin@gmail.com">
+    <img src="https://img.shields.io/badge/Email-danrogulin%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/branch-danya-dev">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
