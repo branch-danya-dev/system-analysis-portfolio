@@ -126,10 +126,14 @@ Local-first мобильный продукт: локальный професс
 
 ### Rebar AutoDim
 
-Реализованный Revit-плагин для автоматического нанесения размеров: geometry, native references, transactions и regeneration.
+Реализованный Revit-плагин для автоматического нанесения размеров: geometry, native references, transactions и regeneration. Системный анализ и готовая реализация RebarDimmer доступны по отдельным ссылкам ниже.
 
 <a href="https://github.com/branch-danya-dev/revit-rebar-autodim-analysis">
-<img src="https://img.shields.io/badge/Открыть%20кейс-Rebar%20AutoDim-181717?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/System%20Analysis-Rebar%20AutoDim-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://github.com/branch-danya-dev/revit-rebar-autodim">
+<img src="https://img.shields.io/badge/Working%20Plugin-RebarDimmer-238636?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 </td>
