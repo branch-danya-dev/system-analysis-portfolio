@@ -1,13 +1,14 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=210&text=System%20Analysis%20Portfolio&fontAlign=50&fontAlignY=40&desc=Real%20Systems%20%C2%B7%20Ownership%20%C2%B7%20Implementation-Aware%20Analysis&descAlign=50&descAlignY=60&animation=fadeIn" alt="System Analysis Portfolio banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Daniel%20Rogulin&fontAlign=50&fontAlignY=38&desc=System%20Analyst%20%C2%B7%20Integrations%20%C2%B7%20Solution%20Design&descAlign=50&descAlignY=58&animation=fadeIn" alt="Daniel Rogulin — System Analyst" />
 </p>
 
 <p align="center">
-  <strong>Три существенно разные реальные системы. Один implementation-aware подход к системному анализу.</strong>
+  <strong>Системный аналитик с практическим опытом разработки и проектирования технических решений.</strong>
 </p>
 
 <p align="center">
-  Я анализирую boundaries, responsibilities, ownership, behavior, states, data, contracts и failures — и сохраняю связь модели с реальными ограничениями реализации.
+  Помогаю превращать бизнес-задачи и сложные изменения в понятную модель системы:<br>
+  требования, границы, данные, API, интеграции, состояния, ошибки и проверяемое поведение.
 </p>
 
 <p align="center">
@@ -15,316 +16,279 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/branch-danya-dev">
-    <img src="https://img.shields.io/badge/GitHub%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://t.me/sadblueses">
+    <img src="https://img.shields.io/badge/Telegram-@sadblueses-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/branch-danya-dev/ssad-methodology">
-    <img src="https://img.shields.io/badge/SSAD%20Methodology-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="mailto:danrogulin@gmail.com">
+    <img src="https://img.shields.io/badge/Email-danrogulin%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/branch-danya-dev">
+    <img src="https://img.shields.io/badge/GitHub-branch--danya--dev-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
 ---
 
-## Идея портфолио
+## Чем я занимаюсь
 
-Портфолио намеренно не строится вокруг повторяющегося набора артефактов вида `requirements + ERD + Swagger + sequence diagram`.
+Мне интересны задачи, где недостаточно просто собрать требования — нужно понять, **как система должна работать целиком** и что произойдёт после перехода от схемы к реализации.
 
-Системы имеют разную форму, поэтому их аналитическое знание имеет разную структуру.
+В работе я соединяю бизнес-контекст и техническую часть: выясняю ограничения, определяю ответственность компонентов, формализую поведение, проектирую контракты и помогаю команде довести решение до работающего результата.
 
-```mermaid
-flowchart LR
-    E[Real evidence] --> B[Boundaries]
-    B --> R[Responsibilities]
-    R --> O[Ownership]
-    O --> M[Behavior · State · Data · Contracts]
-    M --> F[Failures · Change · Compatibility]
-    F --> I[Implementation constraints]
-    I --> V[Verification]
-```
+### Какие задачи я решаю
 
-> **Цель не в производстве документов. Цель — сохранить корректный системный смысл от постановки проблемы до реализации и проверки.**
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+**Новая система или функция**
 
-## Портфолио в одном обзоре
+Разобрать задачу, определить границы, участников, сценарии, бизнес-правила и требования до начала реализации.
 
-| Кейс | Форма системы | Главная аналитическая задача | Evidence / статус |
-|---|---|---|---|
-| **Enterprise Workplace OS Migration** | распределённая enterprise transformation | агрегировать readiness и управлять миграцией через независимо владеемые домены | sanitized reconstruction реальной enterprise-миграции; technical API/data projection явно обозначена как synthetic |
-| **Aveli** | local-first mobile product | отделить ownership профессионального workspace от server-controlled identity, access и billing | real product system-analysis case с frontend/backend/local-data/integration boundaries |
-| **Rebar AutoDim** | host-application automation | сохранить аналитический смысл через view geometry, Revit references, native writes и regeneration | реальный реализованный Revit-плагин; принят заказчиком и введён в регулярное использование |
-| **SSAD** | methodology layer | обобщить reasoning без навязывания одного шаблона репозитория | формализованная методология, проверенная на всех трёх формах систем |
+</td>
+<td width="50%" valign="top">
 
----
+**Изменение существующей системы**
 
-## 01 · Enterprise Workplace OS Migration
+Понять, что затрагивает изменение, где возможны несовместимости, какие контракты и процессы нужно переоткрыть.
 
-**Масштабное изменение enterprise-среды под production constraints.**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-[Открыть кейс →](https://github.com/branch-danya-dev/enterprise-workplace-os-migration)
+**API и интеграции**
 
-Объект анализа — не просто «установить Astra Linux». Это управляемая эволюция рабочего места с сохранением возможности выполнять необходимую бизнес-деятельность.
+Определить ответственность сторон, спроектировать REST/API-контракты, данные, ошибки, идемпотентность и поведение на границах.
 
-### Что обнаружил анализ
+</td>
+<td width="50%" valign="top">
 
-```text
-one broad migration_status
-        ↓ decomposed into
-Workplace Environment
-Readiness
-Planning
-Execution
-Exceptions
-```
+**Данные и состояния**
 
-Ключевые различия:
+Разобрать ownership данных, жизненный цикл сущностей, состояния, переходы, историю и производные представления.
 
-```text
-Astra installed
-!= operational migration complete
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-MigrationSchedule
-!= MigrationAttempt
+**Сложная бизнес-логика**
 
-distributed evidence
-!= distributed ownership of the readiness decision
+Разложить неоднозначную задачу на понятные правила, ограничения, исключения и проверяемые сценарии.
 
-blocker resolved
-!= readiness automatically GREEN
-```
+</td>
+<td width="50%" valign="top">
 
-Текущие system-shaped knowledge areas:
+**Поддержка реализации**
 
-```text
-system/
-workplace/
-readiness/
-planning/
-execution/
-exceptions/
-integrations/
-technical-projection/
-```
+Сопровождать решение через review, grooming, разработку и verification, чтобы смысл не потерялся по дороге в код.
 
-Кейс также показывает, как исправленный domain ownership меняет technical projection: generic status updates заменяются owner-specific операциями, а reporting становится derived read model, а не вторым источником истины.
-
-> **Граница кейса:** опыт миграции реальный и sanitized; REST/OpenAPI/PostgreSQL артефакты — образовательные technical projections, созданные после реальной программы миграции.
+</td>
+</tr>
+</table>
 
 ---
 
-## 02 · Aveli
+## Избранные кейсы
 
-**Local-first mobile workspace с явным ownership и bounded offline trust.**
+Не дублирую проектную документацию здесь — каждый репозиторий сам является полноценным кейсом.
 
-[Открыть кейс →](https://github.com/branch-danya-dev/aveli-system-analysis)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Aveli разделяет две области с совершенно разными требованиями к ownership и availability:
+### Enterprise Workplace OS Migration
 
-```text
-Professional Workspace
-→ local device
-→ clients, appointments, payments, notes, photos
+Реальный enterprise-кейс миграции рабочих мест Windows → Astra Linux с readiness, планированием, исключениями и распределённой ответственностью.
 
-Identity / Access / Billing
-→ backend
-→ account, sessions, trial, grants, subscription, access decision
-```
+<a href="https://github.com/branch-danya-dev/enterprise-workplace-os-migration">
+<img src="https://img.shields.io/badge/Открыть%20кейс-Enterprise%20Migration-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-### Что защищает анализ
+</td>
+<td width="50%" valign="top">
 
-```text
-RevenueCat / Store
-→ billing evidence
+### Aveli
 
-Aveli Backend
-→ normalized billing state
-→ final workspace-access decision
-```
+Local-first мобильный продукт: локальный профессиональный workspace, backend-controlled identity/access и subscription billing.
 
-Ключевые различия:
+<a href="https://github.com/branch-danya-dev/aveli-system-analysis">
+<img src="https://img.shields.io/badge/Открыть%20кейс-Aveli-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-```text
-purchase evidence
-!= workspace access authority
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-access expired
-!= delete professional data
+### Rebar AutoDim
 
-backend unavailable
-!= workspace deleted
+Реализованный Revit-плагин для автоматического нанесения размеров: geometry, native references, transactions и regeneration.
 
-offline cache
-!= unlimited trust
-```
+<a href="https://github.com/branch-danya-dev/revit-rebar-autodim-analysis">
+<img src="https://img.shields.io/badge/Открыть%20кейс-Rebar%20AutoDim-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-Текущие system-shaped knowledge areas:
+</td>
+<td width="50%" valign="top">
 
-```text
-business/
-database/
-backend/
-frontend/
-integrations/
-system/
-```
+### SSAD Methodology
 
-Кейс показывает local/server data ownership, узкие backend API boundaries, access precedence, billing reconciliation, offline trust и whole-system failure/release reasoning.
+Мой практический подход к системному анализу: знания строятся вокруг реальной структуры системы, её границ, ответственности и ownership.
+
+<a href="https://github.com/branch-danya-dev/ssad-methodology">
+<img src="https://img.shields.io/badge/Открыть-SSAD%20Methodology-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 03 · Rebar AutoDim
+## Как я работаю
 
-**Детерминированная geometry automation внутри Autodesk Revit 2025.**
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
 
-[Открыть кейс →](https://github.com/branch-danya-dev/revit-rebar-autodim-analysis)
+### 01
+**Понимаю задачу**
 
-Плагин читает structural truth из Revit и владеет только собственным generated annotation layer.
+Зачем нужно изменение, кто им пользуется, какой результат ожидается и какие ограничения уже известны.
 
-### Что обнаружил анализ
+</td>
+<td width="33%" valign="top" align="center">
 
-```text
-what should be dimensioned
-→ semantic target
+### 02
+**Определяю границы**
 
-how Revit can dimension it
-→ native Reference realization
-```
+Что входит в систему, что остаётся снаружи, кто за что отвечает и где находится authoritative knowledge.
 
-Ключевые различия:
+</td>
+<td width="33%" valign="top" align="center">
 
-```text
-view-space geometry
-!= project XYZ assumptions
+### 03
+**Формализую поведение**
 
-semantic target
-!= Revit Reference
+Сценарии, требования, правила, состояния, данные, ошибки и важные системные инварианты.
 
-missing optional grid
-!= failed native dimension
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
 
-valid geometry
-!= committed annotation result
+### 04
+**Проектирую взаимодействия**
 
-rerun
-!= append duplicate output
-```
+API, интеграции, контракты, потоки данных и поведение на границах ответственности.
 
-Текущие system-shaped knowledge areas:
+</td>
+<td width="33%" valign="top" align="center">
 
-```text
-system/
-execution-context/
-geometry/
-references/
-layout/
-annotations/
-regeneration/
-revit-boundary/
-evidence/
-```
+### 05
+**Сверяю с реализацией**
 
-Transaction на одну независимо значимую зону даёт локальную failure isolation, а regeneration поддерживает один актуальный plugin-owned annotation result для исходной зоны.
+Review и grooming с командой, уточнение спорных мест, проверка технических ограничений.
 
-> **Результат:** решение было реализовано, принято заказчиком и введено в регулярное использование в компании.
+</td>
+<td width="33%" valign="top" align="center">
 
----
+### 06
+**Проверяю результат**
 
-## SSAD · System-Structured Analysis Documentation
+Сопоставляю требования, модель, контракты и фактическое поведение системы. Новое evidence возвращаю в актуальную документацию.
 
-**Практическая методология системного анализа, которую я разработал, формализовал и применил во всех кейсах портфолио.**
+</td>
+</tr>
+</table>
 
-[Открыть методологию →](https://github.com/branch-danya-dev/ssad-methodology)
-
-SSAD строит аналитическое знание вокруг реальных boundaries, responsibilities и ownership системы вместо универсальной taxonomy документов.
-
-Три кейса намеренно создают разные структуры репозиториев:
-
-```text
-Aveli
-→ product-shaped
-
-Enterprise Workplace Migration
-→ transformation-shaped
-
-Rebar AutoDim
-→ host-application-shaped
-```
-
-Общее находится в reasoning model:
-
-```text
-Boundaries
-→ Responsibilities
-→ Ownership
-→ Local models
-→ Connections
-→ System synthesis
-```
-
-> **Одинаковые аналитические принципы. Разная system-shaped knowledge architecture.**
-
-Репозиторий методологии также описывает реальный workflow аналитика, change analysis, collaboration, knowledge architecture, task-based practice и сравнительную проверку на реальных системах.
+> **Мне важен анализ, который можно реализовать:** требования, контракты и архитектурные решения должны сохранять смысл после перехода к реальному коду.
 
 ---
 
-## Как я работаю через всю систему
+## Компетенции
 
-```mermaid
-flowchart TD
-    P[Problem / Request] --> Q[Requirements & constraints]
-    Q --> B[Boundaries & responsibilities]
-    B --> O[Ownership & authority]
-    O --> M[Behavior · States · Data]
-    M --> C[Interfaces · Integrations · Flows]
-    C --> F[Trust · Failures · Compatibility]
-    F --> S[Specification / Solution Design]
-    S --> D[Implementation]
-    D --> V[Verification]
-    V --> K[Current canonical knowledge]
-    V -. mismatch / new evidence .-> M
-```
+### Системный анализ
 
-Мой основной фокус — середина этой цепочки: сделать системный смысл достаточно явным, чтобы requirements, contracts, implementation и verification не начали незаметно противоречить друг другу.
+<p>
+  <img src="https://img.shields.io/badge/Requirements-Engineering-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/System-Boundaries-1F6FEB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Ownership-%26%20Authority-8250DF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Business-Rules-238636?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/State-Models-D29922?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Failure-Analysis-DA3633?style=for-the-badge" />
+</p>
 
----
+### API, интеграции и данные
 
-## Компетенции, доказанные кейсами
+<p>
+  <img src="https://img.shields.io/badge/REST-API-009688?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OpenAPI-Swagger-6BA539?style=for-the-badge&logo=swagger&logoColor=white" />
+  <img src="https://img.shields.io/badge/JSON-Contracts-000000?style=for-the-badge&logo=json&logoColor=white" />
+  <img src="https://img.shields.io/badge/Integration-Analysis-0969DA?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SQL-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data-Modeling-4B5563?style=for-the-badge" />
+</p>
 
-**System analysis:** boundaries, responsibilities, ownership, requirements, business rules, behavior, state models, data ownership, interfaces, integrations, trust, failures и change impact.
+### Моделирование и рабочие инструменты
 
-**Contracts & data:** REST/OpenAPI, JSON contracts, SQL/PostgreSQL modeling, read models, idempotency и compatibility-aware projections.
+<p>
+  <img src="https://img.shields.io/badge/BPMN-2.0-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/UML-Modeling-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Mermaid-Diagrams-FF3670?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
+  <img src="https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white" />
+</p>
 
-**Implementation awareness:** C#/.NET и Revit API, Flutter/Dart, NestJS/Prisma, local SQLite/Drift, Docker, Git/GitHub и production-oriented failure reasoning.
+### Implementation context
 
-**Modeling tools:** Mermaid, PlantUML, UML/BPMN там, где они помогают ответить на системный вопрос, а не определяют architecture знания.
-
----
-
-## Как смотреть портфолио
-
-```text
-Нужен самый широкий enterprise-кейс?
-→ Enterprise Workplace OS Migration
-
-Нужен product / API / data / offline behavior?
-→ Aveli
-
-Нужен глубокий implementation-aware boundary analysis?
-→ Rebar AutoDim
-
-Нужна reasoning model, объединяющая все три?
-→ SSAD
-```
+<p>
+  <img src="https://img.shields.io/badge/C%23-.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter-Dart-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Revit-API-186BFF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
 ---
+
+## SSAD — мой подход к системному анализу
+
+В ходе практической работы я формализовал **SSAD — System-Structured Analysis Documentation**.
+
+Идея простая:
+
+> **Структура знаний должна следовать структуре реальной системы, а не универсальному шаблону документации.**
+
+SSAD уже применена к трём существенно разным системам — мобильному продукту, enterprise migration и host-application automation в Revit. Методология помогает сохранять связь между требованиями, ownership, поведением системы, реализацией и verification.
 
 <p align="center">
-  <a href="https://github.com/branch-danya-dev">
-    <img src="https://img.shields.io/badge/Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/branch-danya-dev/ssad-methodology">
+    <img src="https://img.shields.io/badge/Подробнее-SSAD%20Methodology-8250DF?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## Связаться
+
+Если вам нужно **разобрать новую систему, спроектировать API или интеграцию, формализовать сложную логику, безопасно изменить существующее решение или подготовить требования для разработки** — можно написать мне напрямую.
+
+<p align="center">
+  <a href="https://t.me/sadblueses">
+    <img src="https://img.shields.io/badge/Telegram-@sadblueses-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/branch-danya-dev/ssad-methodology">
-    <img src="https://img.shields.io/badge/Methodology-SSAD-0D1117?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="mailto:danrogulin@gmail.com">
+    <img src="https://img.shields.io/badge/Email-danrogulin%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/branch-danya-dev">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
